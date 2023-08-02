@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tab</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tab-buttons">
+            <button id="tab-01" onclick="showTab('description')">Description</button>
+            <button id="tab-02" onclick="showTab('specifications')">Specifications</button>
+            <button id="tab-03" onclick="showTab('reviews')">Reviews</button>
+        </div>
+        <div class="content">
+            <div id="description">
+                <h2>Lorem ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam illum consequatur eum, rem in omnis? In harum aliquid minima quisquam? Obcaecati quod aspernatur doloremque sequi repellendus reiciendis voluptatem sint quibusdam.
+                </p>
+            </div>
+            <div id="specifications" style="display: none;">
+                <h2> ipsum</h2>
+                <p>Dale a tu cuerpo alegría, Macarena
+                    Que tu cuerpo es pa' darle alegría y cosa buena
+                    Dale a tu cuerpo alegría, Macarena
+                    Eh, Macarena (¡Ay!)
+                    
+                    Macarena, Macarena,
+                    Macarena, que te gustan los veranos de Marbella
+                    Macarena, Macarena,
+                    Macarena, que te gusta la movida guerrillera
+                    
+                    Dale a tu cuerpo alegría, Macarena
+                    Que tu cuerpo es pa' darle alegría y cosa buena
+                    Dale a tu cuerpo alegría, Macarena
+                    Eh, Macarena (¡Ay!)
+                    
+                </p>
+            </div>
+            <div id="reviews" style="display: none;">
+                <h2>Lorem sum</h2>
+                <p>La cucaracha, la cucaracha,
+                    ya no puede caminar,
+                    porque no tiene, porque le falta
+                    las dos patitas de atrás.
+                    
+                    Pasito a paso, la cucaracha,
+                    va marchando siempre así,
+                    pasito a paso, la cucaracha,
+                    no puede caminar sin patas atrás.
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showTab(tabName) {
+          const contentDivs = document.querySelectorAll('.content > div');
+          contentDivs.forEach((div) => {
+            div.style.display = 'none';
+          });
+    
+          const selectedTab = document.getElementById(tabName);
+          selectedTab.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+</html>
